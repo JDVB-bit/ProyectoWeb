@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #a4cec7;
+    color: #110c0c;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #407a4b;
+    color: #ffffff;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Esto mantiene la proporción de aspecto 16:9 de YouTube */
+    margin-top: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #cbd5e1;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion-pagina {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.seccion-pagina h2 {
+    color: #2ebb68;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.seccion-pagina p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.dato-curioso {
+    background-color: #eff6ff;
+    border-left: 4px solid #1c4125;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+}
+
+.lista-historia {
+    margin-top: 20px;
+}   
+
+.tarjeta-historia {
+    background-color: #f1f5f9;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #1c4125;
+    border-radius: 0 6px 6px 0;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-historia:hover {
+    transform: translateX(5px);
+    background-color: #e2e8f0;
+}
+
+.tabla-componentes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-componentes th, .tabla-componentes td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-componentes th {
+    background-color: #f1f5f9;
+    color: #1f633b;
+}
+
+.tabla-componentes code {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #b91c1c;
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 5%;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tabla-componentes {
+        font-size: 0.85rem;
+    }
+    .tabla-componentes th:nth-child(2), 
+    .tabla-componentes td:nth-child(2) {
+        display: none; 
+    }
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.galeria-imagenes img {
+    width: 100%;
+    height: 150px;          
+    object-fit: cover;    
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.03);
+}
+
+.subtitulo-historia {
+    color: #2ebb68;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.linea-tiempo-paginas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bloque-tiempo {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.bloque-tiempo h4 {
+    color: #334155;
+    margin-bottom: 5px;
+    font-size: 1.05rem;
+    border-bottom: 1px dashed #cbd5e1;
+    padding-bottom: 3px;
+}
+
+.bloque-tiempo p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 0;
+}
+
+.bloque-tiempo code {
+    background-color: #e2e8f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
