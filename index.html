@@ -11,7 +11,7 @@
     <!-- ENCABEZADO -->
     <header>
         <div class="logo">
-            <img src="imagenes/logo.pngg" alt="Logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Logo">
             <h1>Páginas Web</h1>
         </div>
         <nav>
@@ -32,13 +32,14 @@
             <!-- SECCIÓN: CONCEPTO -->
             <section id="concepto" class="seccion">
                 <h2>¿Qué es una Página Web?</h2>
-                <p>Una página web es un documento digital que contiene información en forma de texto, imágenes, videos y enlaces. Está almacenada en un <strong>servidor</strong> y se accede a ella desde un navegador (Chrome, Firefox, Safari) usando una dirección única llamada <strong>URL</strong>.</p>
-                <p>El navegador recibe los archivos del servidor y los traduce en una interfaz visual que el usuario puede ver e interactuar. La comunicación entre el navegador y el servidor se hace mediante el protocolo <strong>HTTP o HTTPS</strong> (la "S" significa que la conexión es segura y cifrada).</p>
+                <p>Una página web es un documento digital que contiene información en forma de texto, imágenes, videos y enlaces. Está almacenada en una computadora especial llamada <strong>servidor web</strong>, que está encendida las 24 horas del día para que cualquier persona en el mundo pueda acceder a ella en cualquier momento.</p>
+                <p>Para ver una página web, el usuario utiliza un programa llamado <strong>navegador de internet</strong> (como Google Chrome, Mozilla Firefox, Microsoft Edge o Safari). El navegador envía una solicitud al servidor usando una dirección única llamada <strong>URL</strong> (Uniform Resource Locator), el servidor responde enviando los archivos de la página, y el navegador los convierte en la interfaz visual que vemos en pantalla.</p>
+                <p>Toda esta comunicación entre el navegador y el servidor ocurre mediante el protocolo <strong>HTTP</strong> (HyperText Transfer Protocol). Cuando la dirección empieza con <strong>HTTPS</strong>, significa que la conexión está cifrada y protegida, lo cual es especialmente importante en sitios de bancos, tiendas online o redes sociales donde se manejan datos personales.</p>
 
                 <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80" alt="Ejemplo de página web en un navegador" class="imagen-seccion">
 
                 <div class="dato">
-                    <strong>💡 Dato:</strong> Una <em>página web</em> es un solo documento, mientras que un <em>sitio web</em> es el conjunto de varias páginas bajo un mismo dominio (por ejemplo, todas las páginas de wikipedia.org forman un sitio web).
+                    <strong>💡 Dato importante:</strong> Una <em>página web</em> es un solo documento (como una hoja de papel), mientras que un <em>sitio web</em> es el conjunto completo de todas las páginas bajo un mismo dominio. Por ejemplo, la página de inicio de Wikipedia, un artículo sobre Colombia y la página de búsqueda son tres páginas diferentes, pero todas forman parte del mismo sitio web: wikipedia.org.
                 </div>
 
                 <!-- Video 1 -->
@@ -50,43 +51,48 @@
             <!-- SECCIÓN: HISTORIA -->
             <section id="historia" class="seccion">
                 <h2>Historia de la Web</h2>
-                <p>La <strong>World Wide Web</strong> fue creada en 1989 por el científico británico <strong>Tim Berners-Lee</strong> en el laboratorio CERN de Suiza, con el objetivo de compartir información científica entre investigadores de todo el mundo.</p>
+                <p>La <strong>World Wide Web (WWW)</strong> fue inventada en 1989 por el científico británico <strong>Tim Berners-Lee</strong> mientras trabajaba en el laboratorio de física CERN en Suiza. Su idea original era simple pero revolucionaria: crear un sistema para que los científicos de todo el mundo pudieran compartir documentos e información fácilmente a través de internet. La primera página web de la historia se publicó el 6 de agosto de 1991 y aún puede visitarse en <strong>info.cern.ch</strong>.</p>
+                <p>Desde entonces, la web ha evolucionado enormemente. Los expertos la dividen en tres grandes etapas:</p>
 
                 <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80" alt="Historia de internet y programación" class="imagen-seccion">
 
                 <ul>
-                    <li><strong>Web 1.0 (años 90):</strong> Páginas estáticas y de solo lectura. El usuario solo podía ver el contenido, no interactuar.</li>
-                    <li><strong>Web 2.0 (2004 en adelante):</strong> Nacen las redes sociales, los blogs y el contenido creado por el usuario (YouTube, Facebook, Wikipedia).</li>
-                    <li><strong>Web 3.0 (actualidad):</strong> Inteligencia artificial, personalización y descentralización. Los buscadores entienden el contexto, no solo las palabras.</li>
+                    <li><strong>Web 1.0 — La web de solo lectura (años 90):</strong> Las páginas eran completamente estáticas, como revistas digitales. El usuario solo podía leer el contenido, no podía comentar, publicar ni interactuar. Los sitios eran creados exclusivamente por empresas o instituciones con conocimientos técnicos avanzados.</li>
+                    <li><strong>Web 2.0 — La web social e interactiva (2004 en adelante):</strong> Gracias al avance de JavaScript y las bases de datos dinámicas, nacieron plataformas donde los usuarios podían crear y compartir su propio contenido. Surgieron redes sociales como Facebook (2004), YouTube (2005) y Twitter (2006), además de Wikipedia y los blogs masivos. El usuario pasó de ser espectador a ser creador.</li>
+                    <li><strong>Web 3.0 — La web inteligente y descentralizada (actualidad):</strong> La web actual usa <strong>Inteligencia Artificial</strong> para personalizar la experiencia de cada usuario. Los buscadores ya no solo buscan palabras clave, sino que entienden el contexto y la intención del usuario. También surge la descentralización mediante tecnologías como el blockchain y los NFTs.</li>
                 </ul>
 
                 <!-- Video 2 -->
                 <div class="video">
-                    <iframe src="imagenes/historia.jpg" title="Historia de Internet" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/h0NBVx2Ygnk" title="Historia de Internet" allowfullscreen></iframe>
                 </div>
             </section>
 
             <!-- SECCIÓN: ESTRUCTURA -->
             <section id="estructura" class="seccion">
                 <h2>Estructura de una Página Web</h2>
-                <p>Toda página web moderna se construye con tres lenguajes que trabajan juntos:</p>
+                <p>Toda página web moderna se construye combinando tres lenguajes que trabajan juntos de forma coordinada. Cada uno tiene un rol completamente diferente y ninguno puede reemplazar al otro:</p>
 
                 <div class="tres-cols">
                     <div class="col-card">
                         <h3>🏗️ HTML</h3>
-                        <p>Define el <strong>contenido y la estructura</strong>: títulos, párrafos, imágenes, listas y formularios. Es el esqueleto de la página.</p>
+                        <p><strong>HyperText Markup Language.</strong> Es el esqueleto de la página. No es un lenguaje de programación, sino un sistema de etiquetas que define el contenido: títulos, párrafos, imágenes, listas, tablas y formularios. Sin HTML no existe ninguna página web. Versión actual: <strong>HTML5</strong>.</p>
                     </div>
                     <div class="col-card">
                         <h3>🎨 CSS</h3>
-                        <p>Controla la <strong>apariencia visual</strong>: colores, tipografía, tamaños y la adaptación a distintos dispositivos (responsivo).</p>
+                        <p><strong>Cascading Style Sheets.</strong> Es la ropa y el maquillaje de la página. Controla todos los aspectos visuales: colores, fuentes, tamaños, espaciados, animaciones y el <em>diseño responsivo</em>, que hace que el sitio se vea bien tanto en computadores como en celulares y tablets. Versión actual: <strong>CSS3</strong>.</p>
                     </div>
                     <div class="col-card">
                         <h3>⚡ JavaScript</h3>
-                        <p>Añade <strong>interactividad</strong>: animaciones, validaciones de formularios, menús desplegables y carga de datos sin recargar la página.</p>
+                        <p><strong>El único lenguaje de programación nativo de los navegadores.</strong> Añade vida e interactividad: menús desplegables, validaciones de formularios, animaciones, carga de contenido sin recargar la página (AJAX) y mucho más. Frameworks populares basados en JS: React, Vue y Angular.</p>
                     </div>
                 </div>
 
                 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80" alt="Código de programación web" class="imagen-seccion">
+
+                <div class="dato">
+                    <strong>🧠 Analogía:</strong> Si una página web fuera una persona, el <strong>HTML</strong> serían los huesos (estructura), el <strong>CSS</strong> sería la ropa y apariencia (estética), y el <strong>JavaScript</strong> serían los músculos y el cerebro (movimiento e inteligencia).
+                </div>
 
                 <!-- Video 3 -->
                 <div class="video">
@@ -97,15 +103,16 @@
             <!-- SECCIÓN: COMPONENTES -->
             <section id="componentes" class="seccion">
                 <h2>Componentes de una Página Web</h2>
-                <p>Con el estándar <strong>HTML5</strong>, las páginas se organizan con etiquetas semánticas que le dicen tanto al navegador como a Google qué tipo de contenido contiene cada parte:</p>
+                <p>Con el estándar <strong>HTML5</strong>, las páginas web se organizan usando <strong>etiquetas semánticas</strong>: etiquetas cuyo nombre describe claramente el tipo de contenido que contienen. Esto ayuda a los navegadores a entender la estructura de la página, mejora la accesibilidad para personas con discapacidades visuales (que usan lectores de pantalla), y ayuda a los buscadores como Google a indexar el contenido correctamente para el SEO.</p>
+                <p>Una página web bien construida debería tener todos estos componentes:</p>
 
-                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80" alt="Diseño y componentes de interfaz web" class="imagen-seccion">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Diseño y componentes de interfaz web" class="imagen-seccion">
 
                 <table class="tabla">
                     <thead>
                         <tr>
                             <th>Componente</th>
-                            <th>Etiqueta</th>
+                            <th>Etiqueta HTML5</th>
                             <th>¿Para qué sirve?</th>
                         </tr>
                     </thead>
@@ -113,40 +120,44 @@
                         <tr>
                             <td><strong>Encabezado</strong></td>
                             <td><code>&lt;header&gt;</code></td>
-                            <td>Logo, nombre del sitio y menú de navegación.</td>
+                            <td>Va en la parte superior de la página. Contiene el logo, el nombre del sitio y el menú de navegación principal.</td>
                         </tr>
                         <tr>
                             <td><strong>Navegación</strong></td>
                             <td><code>&lt;nav&gt;</code></td>
-                            <td>Los enlaces que permiten moverse por el sitio.</td>
+                            <td>Agrupa los enlaces del menú que permiten moverse entre las secciones o páginas del sitio. Es fundamental para la accesibilidad y el SEO.</td>
                         </tr>
                         <tr>
                             <td><strong>Contenido principal</strong></td>
                             <td><code>&lt;main&gt;</code></td>
-                            <td>El corazón de la página, el contenido más importante.</td>
+                            <td>El corazón de la página. Contiene el contenido más importante y único del documento. Solo puede existir <em>uno</em> por página.</td>
                         </tr>
                         <tr>
                             <td><strong>Sección</strong></td>
                             <td><code>&lt;section&gt;</code></td>
-                            <td>Divide el contenido en bloques temáticos.</td>
+                            <td>Divide el contenido principal en bloques temáticos. Cada sección debe tener su propio título (h2, h3...).</td>
                         </tr>
                         <tr>
                             <td><strong>Artículo</strong></td>
                             <td><code>&lt;article&gt;</code></td>
-                            <td>Contenido independiente como una noticia o entrada de blog.</td>
+                            <td>Contiene información independiente que podría publicarse por separado: una noticia, entrada de blog, tarjeta de producto o comentario.</td>
                         </tr>
                         <tr>
                             <td><strong>Barra lateral</strong></td>
                             <td><code>&lt;aside&gt;</code></td>
-                            <td>Información complementaria al costado del contenido principal.</td>
+                            <td>Contenido secundario o complementario ubicado al costado del contenido principal. Se usa para menús adicionales, glosarios, publicidad o widgets.</td>
                         </tr>
                         <tr>
                             <td><strong>Pie de página</strong></td>
                             <td><code>&lt;footer&gt;</code></td>
-                            <td>Datos de contacto, copyright y enlaces secundarios.</td>
+                            <td>Va al final del documento. Contiene información legal, derechos de autor (copyright), políticas de privacidad, redes sociales y datos de contacto.</td>
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="dato">
+                    <strong>📌 ¿Por qué usar etiquetas semánticas?</strong> Antes de HTML5, los desarrolladores usaban etiquetas genéricas como <code>&lt;div&gt;</code> para todo. El problema es que un <code>&lt;div&gt;</code> no le dice nada al navegador ni a Google sobre qué tipo de contenido tiene. Con etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> o <code>&lt;footer&gt;</code>, tanto las máquinas como los humanos entienden inmediatamente de qué trata cada parte de la página.
+                </div>
             </section>
 
         </main>
@@ -165,11 +176,13 @@
 
             <div class="widget">
                 <h3>📖 Glosario</h3>
-                <p><strong>URL:</strong> Dirección única de una página en internet.</p>
-                <p><strong>Servidor:</strong> Computadora que almacena y entrega las páginas web.</p>
-                <p><strong>Dominio:</strong> Nombre del sitio (ej: google.com).</p>
-                <p><strong>HTTPS:</strong> Protocolo seguro de transferencia de datos.</p>
-                <p><strong>SEO:</strong> Técnicas para aparecer primero en los buscadores.</p>
+                <p><strong>URL:</strong> Dirección única de una página en internet (ej: https://google.com).</p>
+                <p><strong>Servidor:</strong> Computadora siempre encendida que almacena y entrega las páginas web a quien las pida.</p>
+                <p><strong>Dominio:</strong> El nombre que identifica un sitio web (ej: google.com, youtube.com).</p>
+                <p><strong>HTTPS:</strong> Protocolo seguro de transferencia de datos. Cifra la información para proteger al usuario.</p>
+                <p><strong>SEO:</strong> Search Engine Optimization. Técnicas para que una página aparezca en los primeros resultados de Google.</p>
+                <p><strong>Hosting:</strong> Servicio que alquila espacio en un servidor para guardar los archivos de un sitio web.</p>
+                <p><strong>DNS:</strong> Sistema que traduce nombres de dominio (google.com) a direcciones IP numéricas que los servidores entienden.</p>
             </div>
 
             <div class="widget">
